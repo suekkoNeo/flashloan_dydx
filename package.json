@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "build": "hardhat compile",
+    "dev": "hardhat node",
+    "deploy_eth": "npm run build && npx hardhat run scripts/deploy.js --network mainnet",
+    "deploy_ropsten": "npm run build && npx hardhat run scripts/deploy.js --network ropsten",
+    "deploy_mumbai": "npm run build && npx hardhat run scripts/deploy.js --network mumbai"
+  },
+  "dependencies": {
+    "@ethersproject/contracts": "^5.6.0",
+    "@ethersproject/networks": "^5.6.2",
+    "@ethersproject/providers": "^5.6.4",
+    "@ethersproject/solidity": "^5.6.0",
+    "@openzeppelin/contracts": "2.5.1",
+    "@studydefi/money-legos": "^2.4.2",
+    "@sushiswap/sdk": "3.0.0",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "@uniswap/sdk": "^3.0.3",
+    "bignumber.js": "^9.0.2",
+    "dotenv": "^16.0.0",
+    "web3": "^1.7.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.6.5",
+    "hardhat": "^2.9.3",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  }
+}
